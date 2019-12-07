@@ -1293,8 +1293,9 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
-      background-image:url('../../images/manitas.png');
-      background-position: center center;
+			background-image:url('../../images/manitas.png');
+			background-position: center center;
+			background-size: 135px;
 		}
 
 			#header .logo .icon:before {
@@ -1423,7 +1424,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#header .content p br {
-				display: none;
+				/* display: none; */
 			}
 
 		}
@@ -1440,9 +1441,10 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 5.75rem;
+				height: 5.75rem;
 				line-height: 4.75rem;
+				background-size: 115px;
 			}
 
 				#header .logo .icon:before {
