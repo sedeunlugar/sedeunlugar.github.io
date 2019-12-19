@@ -87,7 +87,7 @@
 				<p>Existen diversas opciones de alojamientos en Cazalla y alrededores desde casas rurales a hoteles palacio: <a href="http://www.cazalla.org/mapa/">Mapa alojamientos en Cazalla</a></p>
 				<br/><p>* * *</p>
 				<p>Hemos creado un mapa con recomendaciones de alojamientos y lugares de interés para que os sea más fácil moveros por la zona.</p><br/>
-				<iframe src="https://www.google.com/maps/d/embed?mid=1z2HWG3pCqQjZjtyXrHHYyIZErtG-J3QH" width="100%" height="300"></iframe>
+				<iframe src="https://www.google.com/maps/d/embed?mid=1z2HWG3pCqQjZjtyXrHHYyIZErtG-J3QH&z=12" width="100%" height="300"></iframe>
 				<br/>
 				
 							</article>
@@ -95,27 +95,23 @@
 						<!-- Contact -->
 							<article id="contacto">
 								<h2 class="major">CONTACTO</h2>
-								<form method="post" action="#">
+								<div class="kwes-form">
+								<form method="post" action="https://kwes.io/api/foreign/forms/x0UNKTX78UYuEEz3S7tD">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">NOMBRE</label>
 											<input type="text" name="name" id="name" />
 										</div>
-										<!--<div class="field half">
-											<label for="email">EMAIL</label>
-											<input type="text" name="email" id="email" />
-										</div>-->
 										<div class="field">
 											<label for="message">MENSAJE</label>
 											<textarea name="message" id="message" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<!--<li><input type="submit" value="Enviar" class="primary" /></li>-->
-										<li><a id="whatsappmiguel" href="https://api.whatsapp.com/send?phone=+34675066261" class="button"><i class="fab fa-whatsapp"></i> Miguel</a></li>
-										<li><a id="whatsappalba" href="https://api.whatsapp.com/send?phone=+34699165881" class="button"><i class="fab fa-whatsapp"></i> Alba</a></li>
+										<li><input type="submit" value="Enviar" class="primary" /></li>
 									</ul>
 								</form>
+								</div>
 							</article>
 					</div>
 
@@ -135,27 +131,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-      
-      <script type="text/javascript">
-      function formChange() {
-        var name = $("#name").val()
-        var email = $("#email").val()
-        var msg = $("#message").val()
-        var txt = name + ": " + msg;
-        var hrefmiguel = encodeURI("https://api.whatsapp.com/send?phone=+34675066261&text=" + txt);
-        var hrefalba = encodeURI("https://api.whatsapp.com/send?phone=+34699165881&text=" + txt);
-        
-        $("#whatsappmiguel").attr("href", hrefmiguel);
-        $("#whatsappalba").attr("href", hrefalba);
-      }
-      
-      $(document).ready(function() {
-        $("#name").change(formChange);
-        $("#email").change(formChange);
-        $("#message").change(formChange);
-      });
-      </script>
-      
-
+			<script src="https://kwes.io/js/kwes.js"></script>
 	</body>
 </html>
