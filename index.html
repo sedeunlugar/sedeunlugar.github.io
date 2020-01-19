@@ -97,23 +97,18 @@
 						<!-- Contact -->
 							<article id="contacto">
 								<h2 class="major">CONTACTO</h2>
-								<div class="kwes-form">
-								<form method="post" action="https://kwes.io/api/foreign/forms/x0UNKTX78UYuEEz3S7tD">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">NOMBRE</label>
-											<input type="text" name="name" id="name" rules="required" />
-										</div>
-										<div class="field">
-											<label for="message">MENSAJE</label>
-											<textarea name="message" id="message" rows="4" rules="required"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Enviar" class="primary" /></li>
-									</ul>
+								<form action="https://formspree.io/xknjpaod" method="POST">
+								  <input type="hidden" name="_subject" value="Alguien te ha escrito a sedeunlugar.es" />
+								  <label>
+									NOMBRE:
+									<input type="text" name="nombre">
+								  </label>
+								  <label>
+									MENSAJE:
+									<textarea name="message"></textarea>
+								  </label>
+								  <button type="submit">Enviar</button>
 								</form>
-								</div>
 							</article>
 					</div>
 
